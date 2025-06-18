@@ -1,4 +1,5 @@
 import Image from 'next/image';
+import { Button } from '@/components/ui/button';
 
 import {
   NavigationMenu,
@@ -13,7 +14,7 @@ import {
 
 export default function Navbar() {
   return (
-    <nav className='flex items-center justify-between p-4'>
+    <nav className='flex items-center justify-between bg-transparent text-white px-8 p-4'>
       <div className='flex items-center gap-4'>
         <Image
           src='/images/logo.png'
@@ -57,9 +58,9 @@ export default function Navbar() {
 
           {/* My Projects */}
           <NavigationMenuItem>
-            <NavigationMenuTrigger>My Projects</NavigationMenuTrigger>
+            <NavigationMenuTrigger className='bg-transparent text-white'>My Projects</NavigationMenuTrigger>
             <NavigationMenuContent>
-              <ul className='grid gap-2 p-4 w-56'>
+              <ul className='grid gap-2 p-4 w-56 bg-transparent text-white'>
                 <li>
                   <NavigationMenuLink href='/projects/ghostlife'>
                     Ghostlife
@@ -86,12 +87,12 @@ export default function Navbar() {
 
           {/* Get in Touch */}
           <NavigationMenuItem>
-            <NavigationMenuLink
-              href='/contact'
+            <Button
+              variant='default'
               className='px-4 py-2'
             >
               Get in Touch
-            </NavigationMenuLink>
+            </Button>
           </NavigationMenuItem>
         </NavigationMenuList>
         <NavigationMenuIndicator />
