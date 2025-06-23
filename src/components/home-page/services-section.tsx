@@ -31,6 +31,7 @@ export default function ServicesAccordion() {
 
       <Accordion
         type='single'
+        defaultValue='analytics'
         className='w-full space-y-2'
       >
         {/* Advanced Analytics */}
