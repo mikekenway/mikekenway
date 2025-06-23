@@ -8,15 +8,13 @@ import {
 } from '@/components/ui/accordion';
 import { Badge } from '@/components/ui/badge';
 import {
-  CheckCircle,
-  Shield,
   Workflow,
   Users,
   Bot,
   Code2,
   SlidersHorizontal,
 } from 'lucide-react';
-import { PencilSquareIcon } from '@heroicons/react/24/solid';
+import { Cog6ToothIcon, PencilSquareIcon } from '@heroicons/react/24/solid';
 import { CheckCircleIcon } from '@heroicons/react/24/outline';
 
 export default function ServicesAccordion() {
@@ -42,7 +40,7 @@ export default function ServicesAccordion() {
               <PencilSquareIcon className='size-6' />
               <span>User Experience Design</span>
               <Badge
-                variant='secondary'
+                variant='default'
                 className='ml-2'
               >
                 Popular
@@ -54,17 +52,19 @@ export default function ServicesAccordion() {
             image='/images/home-page/ux.webp'
             imageAlt='Analytics dashboard showing charts and data visualization'
           >
-            <p className='text-sm mb-3 text-muted-foreground'>
-              Gain deep insights into your data with our comprehensive analytics
-              suite.
+            <p className='text-sm mb-4 text-muted-foreground'>
+              Great UX isn&apos;t just about how things look — it&apos;s about
+              how easily people can use your product. I focus on clarity, speed,
+              and simplicity to create interfaces that reduce friction, boost
+              engagement, and build long-term trust.
             </p>
             <ul className='space-y-2 text-sm'>
               {[
-                'Real-time reporting and dashboards',
-                'Custom metrics and KPIs',
-                'Data visualization tools',
-                'Export capabilities',
-                'Predictive analysis',
+                'Faster Task Completion',
+                'Fewer Support Requests',
+                'Increased Customer Loyalty',
+                'Stronger Brand Trust',
+                'Foundational Support for your Product',
               ].map((feature) => (
                 <li
                   key={feature}
@@ -78,22 +78,44 @@ export default function ServicesAccordion() {
           </AccordionContent>
         </AccordionItem>
 
-        {/* Enterprise Security */}
-        <AccordionItem value='security'>
+        {/* Service Design */}
+        <AccordionItem value='service-design'>
           <AccordionTrigger>
             <div className='flex items-center gap-2'>
-              <Shield className='w-5 h-5' />
-              <span>Enterprise Security</span>
+              <Cog6ToothIcon className='size-6' />
+              <span>Service Design</span>
             </div>
           </AccordionTrigger>
           <AccordionContent
             className='pl-8'
-            image='/images/design.jpg'
+            image='/images/home-page/service-design.webp'
             imageAlt='Security and protection concept'
           >
-            <p className='text-sm text-muted-foreground'>
-              Keep your data secure with our industry-leading security features.
+            <p className='mb-4 text-sm text-muted-foreground'>
+              Service Design looks beyond the screen — it maps and improves the
+              full journey across people, systems, and touchpoints. I identify
+              friction, uncover gaps, and design processes that make every
+              interaction feel intentional and seamless. I&apos;m a big fan of
+              the &quot;human-centered design&quot; approach, which means I
+              always start with the user and work backwards to the solution.
             </p>
+            <ul className='space-y-2 text-sm'>
+              {[
+                'Operational clarity for teams and systems',
+                'Fewer gaps in the customer journey',
+                'Increased service delivery scalability',
+                'Better alignment between business goals and user needs',
+                'Reduced operational bottlenecks',
+              ].map((feature) => (
+                <li
+                  key={feature}
+                  className='flex items-center gap-2'
+                >
+                  <CheckCircleIcon className='size-4 text-zinc-400' />
+                  {feature}
+                </li>
+              ))}
+            </ul>
           </AccordionContent>
         </AccordionItem>
 
