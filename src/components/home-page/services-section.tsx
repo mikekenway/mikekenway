@@ -15,12 +15,13 @@ import {
   Bot,
   Code2,
   SlidersHorizontal,
-  BarChart3,
 } from 'lucide-react';
+import { PencilSquareIcon } from '@heroicons/react/24/solid';
+import { CheckCircleIcon } from '@heroicons/react/24/outline';
 
 export default function ServicesAccordion() {
   return (
-    <div className='max-w-2xl mx-auto text-white'>
+    <div className='max-w-3xl mx-auto text-white'>
       <h2 className='text-3xl font-bold text-center mb-2'>Services I Offer</h2>
       <p className='text-left text-muted-foreground mb-6 py-4'>
         From day one, I&apos;ve always said &quot;if I can&apos;t do it,
@@ -34,12 +35,12 @@ export default function ServicesAccordion() {
         defaultValue='analytics'
         className='w-full space-y-2'
       >
-        {/* Advanced Analytics */}
+        {/* User Experience Design */}
         <AccordionItem value='analytics'>
           <AccordionTrigger>
             <div className='flex items-center gap-2'>
-              <BarChart3 className='w-5 h-5' />
-              <span>Advanced Analytics</span>
+              <PencilSquareIcon className='size-6' />
+              <span>User Experience Design</span>
               <Badge
                 variant='secondary'
                 className='ml-2'
@@ -49,15 +50,15 @@ export default function ServicesAccordion() {
             </div>
           </AccordionTrigger>
           <AccordionContent
-            className='pl-8'
-            image='/images/ux.jpg'
+            className=''
+            image='/images/home-page/ux.webp'
             imageAlt='Analytics dashboard showing charts and data visualization'
           >
             <p className='text-sm mb-3 text-muted-foreground'>
               Gain deep insights into your data with our comprehensive analytics
               suite.
             </p>
-            <ul className='space-y-1 text-sm'>
+            <ul className='space-y-2 text-sm'>
               {[
                 'Real-time reporting and dashboards',
                 'Custom metrics and KPIs',
@@ -69,7 +70,7 @@ export default function ServicesAccordion() {
                   key={feature}
                   className='flex items-center gap-2'
                 >
-                  <CheckCircle className='w-4 h-4 text-green-500' />
+                  <CheckCircleIcon className='size-4 text-zinc-400' />
                   {feature}
                 </li>
               ))}
@@ -112,7 +113,7 @@ export default function ServicesAccordion() {
           </AccordionTrigger>
           <AccordionContent
             className='pl-8'
-            image='/images/hero-photo.jpg'
+            image='/images/home-page/hero-photo.jpg'
             imageAlt='Workflow automation and process optimization'
           >
             <p className='text-sm text-muted-foreground'>
@@ -153,7 +154,7 @@ export default function ServicesAccordion() {
           </AccordionTrigger>
           <AccordionContent
             className='pl-8'
-            image='/images/ux.webp'
+            image='/images/home-page/ux.webp'
             imageAlt='AI and machine learning technology'
           >
             <p className='text-sm text-muted-foreground'>

@@ -17,7 +17,7 @@ const inter = Inter({
 const SITE_TITLE = 'Mike Kenway - Portfolio';
 const SITE_DESCRIPTION = 'UX Designer & Creative Director.';
 const SITE_URL = 'https://mikekenway.com';
-const OG_IMAGE = 'https://mikekenway.com/images/og-image.png';
+const OG_IMAGE = 'https://mikekenway.com/images/logo.png';
 
 export const metadata: Metadata = {
   title: SITE_TITLE,
