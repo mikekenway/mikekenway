@@ -6,7 +6,6 @@ export default function Home() {
     <div className='relative z-10'>
       <HeroSection />
       <ServicesSection />
-      {/* Add more sections here as needed */}
     </div>
   );
 }
