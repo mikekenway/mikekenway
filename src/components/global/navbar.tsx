@@ -1,3 +1,6 @@
+'use client';
+
+import { useState, useEffect } from 'react';
 import Image from 'next/image';
 import { Button } from '@/components/ui/button';
 
@@ -13,8 +16,24 @@ import {
 } from '@/components/ui/navigation-menu';
 
 export default function Navbar() {
+  const [isScrolled, setIsScrolled] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const scrollTop = window.scrollY;
+      setIsScrolled(scrollTop > 0);
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
+
   return (
-    <nav className='flex items-center justify-between bg-transparent text-white px-8 p-4'>
+    <nav
+      className={`sticky top-0 z-50 flex items-center justify-between text-white px-8 p-4 transition-all duration-300 ${
+        isScrolled ? 'bg-black/80 backdrop-blur-sm' : 'bg-transparent'
+      }`}
+    >
       <div className='flex items-center gap-4'>
         <Image
           src='/images/logo.png'
@@ -58,9 +77,11 @@ export default function Navbar() {
 
           {/* My Projects */}
           <NavigationMenuItem>
-            <NavigationMenuTrigger className='bg-transparent text-white'>My Projects</NavigationMenuTrigger>
+            <NavigationMenuTrigger className='bg-transparent text-white'>
+              My Projects
+            </NavigationMenuTrigger>
             <NavigationMenuContent>
-              <ul className='grid gap-2 p-4 w-56 bg-transparent text-white'>
+              <ul className='grid gap-2 p-4 w-56 bg-black border-black text-white'>
                 <li>
                   <NavigationMenuLink href='/projects/ghostlife'>
                     Ghostlife

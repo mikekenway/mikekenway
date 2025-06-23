@@ -1,7 +1,6 @@
-
 import type { Metadata } from 'next';
 import { ReactNode } from 'react';
-import './globals.css'; 
+import './globals.css';
 
 import Navbar from '../components/global/navbar';
 import Footer from '../components/global/footer';
@@ -14,7 +13,7 @@ const inter = Inter({
   weight: ['400', '500', '600', '700'],
 });
 
-// Site Metadata 
+// Site Metadata
 const SITE_TITLE = 'Mike Kenway - Portfolio';
 const SITE_DESCRIPTION = 'UX Designer & Creative Director.';
 const SITE_URL = 'https://mikekenway.com';
@@ -50,10 +49,29 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: { children: ReactNode }) {
   return (
     <html lang='en'>
-      <body className='bg-black' >
-          <Navbar />
-          <main className={inter.className}>{children}</main>
-          <Footer />
+      <body className='bg-black'>
+        <div className='relative w-full min-h-screen overflow-x-hidden'>
+          {/* Indigo Gradient Splash (Top Left) */}
+          <div
+            className='pointer-events-none absolute -top-32 -left-32 w-[420px] h-[420px] z-0'
+            aria-hidden='true'
+          >
+            <div className='w-full h-full bg-gradient-to-br from-indigo-900 via-indigo-700 to-transparent opacity-40 blur-[90px] rounded-full' />
+          </div>
+          {/* Pink Gradient Splash (Bottom Right) */}
+          <div
+            className='pointer-events-none absolute -bottom-32 -right-32 w-[420px] h-[420px] z-0'
+            aria-hidden='true'
+          >
+            <div className='w-full h-full bg-gradient-to-tr from-pink-900 via-pink-700 to-transparent opacity-40 blur-[90px] rounded-full' />
+          </div>
+
+          <div className='relative z-10'>
+            <Navbar />
+            <main className={inter.className}>{children}</main>
+            <Footer />
+          </div>
+        </div>
       </body>
     </html>
   );
