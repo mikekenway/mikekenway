@@ -7,15 +7,12 @@ import {
   AccordionTrigger,
 } from '@/components/ui/accordion';
 import { Badge } from '@/components/ui/badge';
-import {
-  Workflow,
-  Users,
-  Bot,
-  Code2,
-  SlidersHorizontal,
-} from 'lucide-react';
-import { Cog6ToothIcon, PencilSquareIcon } from '@heroicons/react/24/solid';
-import { CheckCircleIcon } from '@heroicons/react/24/outline';
+import { CameraIcon, Cog6ToothIcon, PencilSquareIcon } from '@heroicons/react/24/solid';
+import { CheckCircleIcon, ServerStackIcon } from '@heroicons/react/24/solid';
+import { CommandLineIcon } from '@heroicons/react/24/solid';
+import { SwatchIcon } from '@heroicons/react/24/solid';
+import { CodeBracketSquareIcon } from '@heroicons/react/24/solid';
+import { FaShopify } from 'react-icons/fa';
 
 export default function ServicesAccordion() {
   return (
@@ -39,16 +36,9 @@ export default function ServicesAccordion() {
             <div className='flex items-center gap-2'>
               <PencilSquareIcon className='size-6' />
               <span>User Experience Design</span>
-              <Badge
-                variant='default'
-                className='ml-2'
-              >
-                Popular
-              </Badge>
             </div>
           </AccordionTrigger>
           <AccordionContent
-            className=''
             image='/images/home-page/ux.webp'
             imageAlt='Analytics dashboard showing charts and data visualization'
           >
@@ -87,11 +77,10 @@ export default function ServicesAccordion() {
             </div>
           </AccordionTrigger>
           <AccordionContent
-            className='pl-8'
             image='/images/home-page/service-design.webp'
-            imageAlt='Security and protection concept'
+            imageAlt='Service design process illustration'
           >
-            <p className='mb-4 text-sm text-muted-foreground'>
+            <p className='text-sm mb-4 text-muted-foreground'>
               Service Design looks beyond the screen — it maps and improves the
               full journey across people, systems, and touchpoints. I identify
               friction, uncover gaps, and design processes that make every
@@ -101,11 +90,11 @@ export default function ServicesAccordion() {
             </p>
             <ul className='space-y-2 text-sm'>
               {[
+                'Seamless experiences across every touchpoint',
                 'Operational clarity for teams and systems',
                 'Fewer gaps in the customer journey',
-                'Increased service delivery scalability',
+                'More scalable service delivery',
                 'Better alignment between business goals and user needs',
-                'Reduced operational bottlenecks',
               ].map((feature) => (
                 <li
                   key={feature}
@@ -119,109 +108,229 @@ export default function ServicesAccordion() {
           </AccordionContent>
         </AccordionItem>
 
-        {/* Workflow Automation */}
-        <AccordionItem value='automation'>
+        {/* Web Development */}
+        <AccordionItem value='development'>
           <AccordionTrigger>
             <div className='flex items-center gap-2'>
-              <Workflow className='w-5 h-5' />
-              <span>Workflow Automation</span>
-              <Badge
-                variant='outline'
-                className='ml-2 text-green-500 border-green-500'
-              >
-                New
-              </Badge>
+              <CommandLineIcon className='size-6' />
+              <span>Web Development</span>
             </div>
           </AccordionTrigger>
           <AccordionContent
-            className='pl-8'
-            image='/images/home-page/hero-photo.jpg'
+            image='/images/home-page/dev.webp'
             imageAlt='Workflow automation and process optimization'
           >
-            <p className='text-sm text-muted-foreground'>
-              Automate repetitive tasks and streamline your business processes.
+            <p className='text-sm mb-4 text-muted-foreground'>
+              I build fast, modern websites tailored to your goals — whether
+              that&apos;s selling products, generating leads, or just telling your
+              story clearly. From strategy to launch, I handle the design,
+              development, and integrations that help your business run smarter.
             </p>
+            <ul className='space-y-2 text-sm'>
+              {[
+                'Custom-built sites for brands, stores, and creators',
+                'Responsive layouts that look great on any device',
+                'SEO-ready foundations and fast load times',
+                'Easy-to-edit content and long-term maintainability',
+                'Integrations with Shopify, Klaviyo, and more',
+              ].map((feature) => (
+                <li
+                  key={feature}
+                  className='flex items-center gap-2'
+                >
+                  <CheckCircleIcon className='size-4 text-zinc-400' />
+                  {feature}
+                </li>
+              ))}
+            </ul>
           </AccordionContent>
         </AccordionItem>
 
-        {/* Team Collaboration */}
-        <AccordionItem value='collaboration'>
+        {/* Shopify Partner */}
+        <AccordionItem value='shopify'>
           <AccordionTrigger>
             <div className='flex items-center gap-2'>
-              <Users className='w-5 h-5' />
-              <span>Team Collaboration</span>
+              <FaShopify className='size-6' />
+              <span>Shopify Partner</span>
             </div>
           </AccordionTrigger>
           <AccordionContent
-            className='pl-8'
-            image='/images/kenway.jpg'
+            image='/images/home-page/shopify.webp'
             imageAlt='Team collaboration and communication'
           >
-            <p className='text-sm text-muted-foreground'>
-              Work together seamlessly with tools designed for modern teams.
+            <p className='text-sm mb-4 text-muted-foreground'>
+              As a long-time Shopify Partner, I&apos;ve helped countless brands
+              launch, scale, and fine-tune their stores — including my own. I
+              know the platform inside and out, and I bring that hands-on
+              experience to every client I work with.
             </p>
+            <ul className='space-y-2 text-sm'>
+              {[
+                'Years of experience as a verified Shopify Partner',
+                'End-to-end store builds, redesigns, and migrations',
+                'Deep knowledge of Shopify themes, Liquid, and metafields',
+                'Work with a theme or build headless from scratch',
+                'Direct Experience from daily hands-on management of my own Shopify storefront',
+              ].map((feature) => (
+                <li
+                  key={feature}
+                  className='flex items-center gap-2'
+                >
+                  <CheckCircleIcon className='size-4 text-zinc-400' />
+                  {feature}
+                </li>
+              ))}
+            </ul>
           </AccordionContent>
         </AccordionItem>
 
-        {/* AI Assistant */}
+        {/* UI Design */}
         <AccordionItem value='ai'>
           <AccordionTrigger>
             <div className='flex items-center gap-2'>
-              <Bot className='w-5 h-5' />
-              <span>AI Assistant</span>
-              <Badge className='ml-2 bg-yellow-500 text-black hover:bg-yellow-600'>
-                Coming Soon
-              </Badge>
+              <CodeBracketSquareIcon className='size-6' />
+              <span>UI Design</span>
             </div>
           </AccordionTrigger>
           <AccordionContent
-            className='pl-8'
             image='/images/home-page/ux.webp'
             imageAlt='AI and machine learning technology'
           >
-            <p className='text-sm text-muted-foreground'>
-              Leverage artificial intelligence to boost productivity and gain
-              insights.
+            <p className='text-sm mb-4 text-muted-foreground'>
+              Leverage AI to handle repetitive tasks, answer questions, and
+              support your team around the clock.
             </p>
+            <ul className='space-y-2 text-sm'>
+              {[
+                'Natural language task assistance',
+                'Smart responses based on your data',
+                '24/7 automated support',
+                'Helps reduce team workload',
+                'Continuously learns and improves',
+              ].map((feature) => (
+                <li
+                  key={feature}
+                  className='flex items-center gap-2'
+                >
+                  <CheckCircleIcon className='size-4 text-zinc-400' />
+                  {feature}
+                </li>
+              ))}
+            </ul>
           </AccordionContent>
         </AccordionItem>
 
-        {/* Developer API */}
-        <AccordionItem value='api'>
+        {/* Graphic Design */}
+        <AccordionItem value='graphic-design'>
           <AccordionTrigger>
             <div className='flex items-center gap-2'>
-              <Code2 className='w-5 h-5' />
-              <span>Developer API</span>
+              <SwatchIcon className='size-6' />
+              <span>Graphic Design</span>
             </div>
           </AccordionTrigger>
           <AccordionContent
-            className='pl-8'
-            image='/images/logo.png'
-            imageAlt='Developer tools and API integration'
+            image='/images/home-page/design.webp'
+            imageAlt='Graphic design process illustration'
           >
-            <p className='text-sm text-muted-foreground'>
-              Build custom integrations and extend platform functionality.
+            <p className='text-sm mb-4 text-muted-foreground'>
+              From brand identities to social graphics, I create visuals that
+              feel intentional and aligned. Every piece is crafted to support
+              your message, elevate your brand, and work across the platforms
+              you care about most.
             </p>
+            <ul className='space-y-2 text-sm'>
+              {[
+                'Branding systems, logos, and visual identities',
+                'Marketing assets for web, email, and social',
+                'Print-ready designs for packaging and merch',
+                'Editable templates for long-term use',
+                'Creative direction that ties it all together',
+              ].map((feature) => (
+                <li
+                  key={feature}
+                  className='flex items-center gap-2'
+                >
+                  <CheckCircleIcon className='size-4 text-zinc-400' />
+                  {feature}
+                </li>
+              ))}
+            </ul>
           </AccordionContent>
         </AccordionItem>
 
-        {/* Advanced Customization */}
-        <AccordionItem value='customization'>
+        {/* Product Photography */}
+        <AccordionItem value='product-photography'>
           <AccordionTrigger>
             <div className='flex items-center gap-2'>
-              <SlidersHorizontal className='w-5 h-5' />
-              <span>Advanced Customization</span>
+              <CameraIcon className='size-6' />
+              <span>Product Photography</span>
             </div>
           </AccordionTrigger>
           <AccordionContent
-            className='pl-8'
-            image='/images/design.jpg'
-            imageAlt='Customization and configuration options'
+            image='/images/home-page/product-photography.webp'
+            imageAlt='Product photography process illustration'
           >
-            <p className='text-sm text-muted-foreground'>
-              Tailor the platform to your specific needs with extensive
-              customization options.
+            <p className='text-sm mb-4 text-muted-foreground'>
+              Strong product photography builds trust, shows off the details,
+              and sets the tone for your entire brand. I shoot clean,
+              professional images that make your products shine — whether
+              it&apos;s for your store, social, or next launch campaign.
             </p>
+            <ul className='space-y-2 text-sm'>
+              {[
+                'Studio-lit photos with crisp, true-to-life detail',
+                'Styled shoots for lifestyle and brand storytelling',
+                'Optimized for web, social, and print',
+                'Fast turnaround and consistent editing',
+                'Great for Shopify, Etsy, and DTC brands',
+              ].map((feature) => (
+                <li
+                  key={feature}
+                  className='flex items-center gap-2'
+                >
+                  <CheckCircleIcon className='size-4 text-zinc-400' />
+                  {feature}
+                </li>
+              ))}
+            </ul>
+          </AccordionContent>
+        </AccordionItem>
+
+        {/* IT, Network, and Infrastructure Design & Management */}
+        <AccordionItem value='network'>
+          <AccordionTrigger>
+            <div className='flex items-center gap-2'>
+              <ServerStackIcon className='size-6' />
+              <span>IT, Network, and Infrastructure Design & Management</span>
+            </div>
+          </AccordionTrigger>
+          <AccordionContent
+            image='/images/home-page/network.webp'
+            imageAlt='IT, Network, and Infrastructure Design & Management process illustration'
+          >
+            <p className='text-sm mb-4 text-muted-foreground'>
+              From server setup to day-to-day tech support, I help small teams
+              run smoothly with dependable IT systems. I manage both Windows and
+              Linux environments, handle DNS and networking, and make sure your
+              hardware, users, and data stay secure and accessible.
+            </p>
+            <ul className='space-y-2 text-sm'>
+              {[
+                'Theme and layout control',
+                'Component-level overrides',
+                'Custom field and form logic',
+                'Role-based interface views',
+                'Built-in support for custom CSS',
+              ].map((feature) => (
+                <li
+                  key={feature}
+                  className='flex items-center gap-2'
+                >
+                  <CheckCircleIcon className='size-4 text-zinc-400' />
+                  {feature}
+                </li>
+              ))}
+            </ul>
           </AccordionContent>
         </AccordionItem>
       </Accordion>
