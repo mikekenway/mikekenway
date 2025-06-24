@@ -11,7 +11,9 @@ import { CheckCircleIcon, ServerStackIcon } from '@heroicons/react/24/solid';
 import { CommandLineIcon } from '@heroicons/react/24/solid';
 import { SwatchIcon } from '@heroicons/react/24/solid';
 import { CodeBracketSquareIcon } from '@heroicons/react/24/solid';
+import Image from 'next/image';
 import { FaShopify } from 'react-icons/fa';
+import { IoTelescopeSharp } from 'react-icons/io5';
 
 export default function ServicesAccordion() {
   return (
@@ -121,8 +123,8 @@ export default function ServicesAccordion() {
           >
             <p className='text-sm mb-4 text-muted-foreground'>
               I build fast, modern websites tailored to your goals — whether
-              that&apos;s selling products, generating leads, or just telling your
-              story clearly. From strategy to launch, I handle the design,
+              that&apos;s selling products, generating leads, or just telling
+              your story clearly. From strategy to launch, I handle the design,
               development, and integrations that help your business run smarter.
             </p>
             <ul className='space-y-2 text-sm'>
@@ -170,6 +172,85 @@ export default function ServicesAccordion() {
                 'Deep knowledge of Shopify themes, Liquid, and metafields',
                 'Work with a theme or build headless from scratch',
                 'Direct Experience from daily hands-on management of my own Shopify storefront',
+              ].map((feature) => (
+                <li
+                  key={feature}
+                  className='flex items-center gap-2'
+                >
+                  <CheckCircleIcon className='size-4 text-zinc-400' />
+                  {feature}
+                </li>
+              ))}
+            </ul>
+          </AccordionContent>
+        </AccordionItem>
+
+        {/* Klaviyo Partner */}
+        <AccordionItem value='klaviyo'>
+          <AccordionTrigger>
+            <div className='flex items-center gap-2'>
+              <Image
+                src='/images/home-page/klaviyo.webp'
+                alt='Klaviyo logo'
+                width={24}
+                height={24}
+              />
+              <span>Klaviyo Partner</span>
+            </div>
+          </AccordionTrigger>
+          <AccordionContent
+            image='/images/home-page/klaviyo.webp'
+            imageAlt='Team collaboration and communication'
+          >
+            <p className='text-sm mb-4 text-muted-foreground'>
+              As a Klaviyo Partner, I design and build email flows that connect
+              with your audience, drive revenue, and scale with your brand. From
+              technical setup to campaign strategy, I&apos;ll help you get the
+              most out of every send.
+            </p>
+            <ul className='space-y-2 text-sm'>
+              {[
+                'Automated flows for welcome, abandonment, and post-purchase',
+                'Custom-designed templates that reflect your brand',
+                'Audience segmentation and smart personalization',
+                'Campaign strategy, copywriting, and performance review',
+                'Deep integrations with Shopify, Stripe, and other platforms',
+              ].map((feature) => (
+                <li
+                  key={feature}
+                  className='flex items-center gap-2'
+                >
+                  <CheckCircleIcon className='size-4 text-zinc-400' />
+                  {feature}
+                </li>
+              ))}
+            </ul>
+          </AccordionContent>
+        </AccordionItem>
+
+        {/* Creative Direction */}
+        <AccordionItem value='creative-direction'>
+          <AccordionTrigger>
+            <div className='flex items-center gap-2'>
+              <IoTelescopeSharp className='size-6' />
+              <span>Creative Direction</span>
+            </div>
+          </AccordionTrigger>
+          <AccordionContent
+            image='/images/home-page/ux.webp'
+            imageAlt='AI and machine learning technology'
+          >
+            <p className='text-sm mb-4 text-muted-foreground'>
+              Leverage AI to handle repetitive tasks, answer questions, and
+              support your team around the clock.
+            </p>
+            <ul className='space-y-2 text-sm'>
+              {[
+                'Natural language task assistance',
+                'Smart responses based on your data',
+                '24/7 automated support',
+                'Helps reduce team workload',
+                'Continuously learns and improves',
               ].map((feature) => (
                 <li
                   key={feature}
@@ -315,11 +396,11 @@ export default function ServicesAccordion() {
             </p>
             <ul className='space-y-2 text-sm'>
               {[
-                'Theme and layout control',
-                'Component-level overrides',
-                'Custom field and form logic',
-                'Role-based interface views',
-                'Built-in support for custom CSS',
+                'Windows Server and Linux Server installation and management',
+                'DNS configuration, SSL, and domain control',
+                'User account creation, permissions, and policy enforcement',
+                'Office network setup with routers, switches, and access points',
+                'On-site and remote hardware installation and maintenance',
               ].map((feature) => (
                 <li
                   key={feature}
