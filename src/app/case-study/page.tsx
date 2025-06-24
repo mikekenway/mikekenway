@@ -33,13 +33,13 @@ export default function CaseStudiesPage() {
           collapsible
           className='w-full space-y-4'
         >
-          {/* === Case Study #1 === */}
+          {/* Case Study #1 */}
           <AccordionItem value='case-study-1'>
             <AccordionTrigger>
               <div className='flex flex-col md:flex-row md:items-center md:justify-between w-full text-left gap-2'>
                 <div className='flex flex-col'>
                   <span className='text-base font-medium text-white'>
-                    B2B SaaS Platform Redesign
+                    Platform Redesign & Design System Development
                   </span>
                   <span className='text-sm text-muted-foreground'>
                     A full dashboard overhaul to improve UX and increase product
@@ -155,13 +155,13 @@ export default function CaseStudiesPage() {
             </AccordionContent>
           </AccordionItem>
 
-          {/* === Case Study #2 === */}
+          {/* Case Study #2 */}
           <AccordionItem value='case-study-2'>
             <AccordionTrigger>
               <div className='flex flex-col md:flex-row md:items-center md:justify-between w-full text-left gap-2'>
                 <div className='flex flex-col'>
                   <span className='text-base font-medium text-white'>
-                    B2B SaaS Platform Redesign
+                    B2B Customer Experience Overhaul
                   </span>
                   <span className='text-sm text-muted-foreground'>
                     A full dashboard overhaul to improve UX and increase product
@@ -277,13 +277,13 @@ export default function CaseStudiesPage() {
             </AccordionContent>
           </AccordionItem>
 
-          {/* === Case Study #3 === */}
+          {/* Case Study #3 */}
           <AccordionItem value='case-study-3'>
             <AccordionTrigger>
               <div className='flex flex-col md:flex-row md:items-center md:justify-between w-full text-left gap-2'>
                 <div className='flex flex-col'>
                   <span className='text-base font-medium text-white'>
-                    B2B SaaS Platform Redesign
+                    E-Commerce Platform Migration & Redesign
                   </span>
                   <span className='text-sm text-muted-foreground'>
                     A full dashboard overhaul to improve UX and increase product
