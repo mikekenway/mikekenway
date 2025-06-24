@@ -74,7 +74,7 @@ function AccordionContent({
     >
       <div className={cn('pt-0 pb-4', className)}>
         {image && (
-          <div className='relative w-full h-72 mb-4 rounded-lg overflow-hidden'>
+          <div className='relative w-full h-80 mb-4 rounded-lg overflow-hidden'>
             <Image
               src={image}
               alt={imageAlt || 'Accordion content image'}

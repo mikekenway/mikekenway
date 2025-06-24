@@ -6,7 +6,6 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from '@/components/ui/accordion';
-import { Badge } from '@/components/ui/badge';
 import { CameraIcon, Cog6ToothIcon, PencilSquareIcon } from '@heroicons/react/24/solid';
 import { CheckCircleIcon, ServerStackIcon } from '@heroicons/react/24/solid';
 import { CommandLineIcon } from '@heroicons/react/24/solid';
@@ -16,8 +15,8 @@ import { FaShopify } from 'react-icons/fa';
 
 export default function ServicesAccordion() {
   return (
-    <div className='max-w-3xl mx-auto text-white'>
-      <h2 className='text-3xl font-bold text-center mb-2'>Services I Offer</h2>
+    <div className='bg-transparent max-w-3xl mx-auto text-white'>
+      <h2 className='text-3xl font-bold text-center mb-2'>Offered Services</h2>
       <p className='text-left text-muted-foreground mb-6 py-4'>
         From day one, I&apos;ve always said &quot;if I can&apos;t do it,
         I&apos;ll figure out how&quot; and that&apos;s set me on a path of
