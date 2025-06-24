@@ -16,7 +16,7 @@ export default function HeroSection() {
           <h1 className="text-4xl md:text-6xl font-extrabold leading-tight mb-2">
             Hi! I&rsquo;m
             <br />
-            Kenway
+            <span className='text-7xl text-indigo-500'>Kenway</span>
           </h1>
 
           {/* Subheading */}
@@ -28,7 +28,7 @@ export default function HeroSection() {
           </p>
 
           {/* Features */}
-          <ul className="space-y-1 mb-6">
+          <ul className="space-y-2 mb-6">
             <li className="flex items-center gap-2 text-gray-200 text-base">
               <PencilSquareIcon className="size-6" />
               User Experience Design

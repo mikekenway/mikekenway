@@ -16,21 +16,21 @@ import { Button } from '@/components/ui/button';
 
 const FEATURED_SERVICES = [
   {
-    icon: <PencilSquareIcon className='size-6 text-white' />, // User Experience Design
+    icon: <PencilSquareIcon className='size-6 text-white' />, 
     title: 'User Experience Design',
     description:
       "Great UX isn't just about how things look — it's about how easily people can use your product.",
     link: '/services#user-experience-design',
   },
   {
-    icon: <Cog6ToothIcon className='size-6 text-white' />, // Service Design
+    icon: <Cog6ToothIcon className='size-6 text-white' />, 
     title: 'Service Design',
     description:
       'Service Design looks beyond the screen — it maps and improves the full journey across people, systems, and touchpoints.',
     link: '/services#service-design',
   },
   {
-    icon: <CommandLineIcon className='size-6 text-white' />, // Web Development
+    icon: <CommandLineIcon className='size-6 text-white' />, 
     title: 'Web Development',
     description:
       "I build fast, modern websites tailored to your goals — whether that's selling products, generating leads, or just telling your story clearly.",

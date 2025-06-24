@@ -6,7 +6,7 @@ import { ArrowRightIcon } from '@heroicons/react/24/solid';
 
 export default function FeaturedCaseStudy() {
   return (
-    <section className='w-full bg-black px-4 py-16 md:py-24'>
+    <section className='w-full bg-black px-4 py-12 md:py-48'>
       <div className='max-w-5xl mx-auto grid md:grid-cols-2 gap-8 items-center'>
         {/* Image */}
         <div className='relative w-full h-80 md:h-[420px] rounded-xl overflow-hidden'>
@@ -19,11 +19,11 @@ export default function FeaturedCaseStudy() {
         </div>
 
         {/* Testimonial Block */}
-        <div className='space-y-6'>
-          <p className='text-xs uppercase text-muted-foreground tracking-wide'>
+        <div className='space-y-4'>
+          <p className='text-sm uppercase text-muted-foreground tracking-wide'>
             Featured Client
           </p>
-          <blockquote className='text-lg md:text-xl font-medium text-white leading-relaxed'>
+          <blockquote className='text-lg mb-6 md:text-xl font-medium text-white leading-relaxed'>
             “Working with mike is always a pleasure. He is prompt, organized,
             and best of all for the sake of work he&apos;s in, he&apos;s
             innovative. Mike has helped me take one of my clients and increase
@@ -34,7 +34,7 @@ export default function FeaturedCaseStudy() {
           </blockquote>
           <div>
             <p className='font-semibold text-white'>Oliver Kamyszew</p>
-            <p className='text-sm text-muted-foreground'>
+            <p className='text-sm text-muted-foreground mb-6'>
               Artist Relations · FM Music Group
             </p>
           </div>
