@@ -65,6 +65,16 @@ export default function Navbar() {
             </NavigationMenuLink>
           </NavigationMenuItem>
 
+          {/* Services */}
+          <NavigationMenuItem>
+            <NavigationMenuLink
+              href='/services'
+              className='px-4 py-2'
+            >
+              Services
+            </NavigationMenuLink>
+          </NavigationMenuItem>
+
           {/* Blog */}
           <NavigationMenuItem>
             <NavigationMenuLink
