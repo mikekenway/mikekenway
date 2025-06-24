@@ -50,6 +50,7 @@ export default function RootLayout({ children }: { children: ReactNode }) {
   return (
     <html lang='en'>
       <body className='bg-black'>
+          <Navbar />
         <div className='relative w-full min-h-screen overflow-x-hidden'>
           {/* Indigo Gradient Splash (Top Left) */}
           <div
@@ -67,7 +68,6 @@ export default function RootLayout({ children }: { children: ReactNode }) {
           </div>
 
           <div className='relative z-10'>
-            <Navbar />
             <main className={inter.className}>{children}</main>
             <Footer />
           </div>

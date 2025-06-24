@@ -68,7 +68,7 @@ export function FeaturedServices() {
                 <CardTitle className='text-lg text-white mb-4'>
                   {service.title}
                 </CardTitle>
-                <CardDescription className='mb-4 text-muted-foreground'>
+                <CardDescription className='text-muted-foreground'>
                   {service.description}
                 </CardDescription>
               </CardContent>
