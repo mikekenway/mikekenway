@@ -14,6 +14,7 @@ import {
   NavigationMenuTrigger,
   NavigationMenuViewport,
 } from '@/components/ui/navigation-menu';
+import Link from 'next/link';
 
 export default function Navbar() {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -122,8 +123,11 @@ export default function Navbar() {
             <Button
               variant='default'
               className='px-4 py-2'
+              asChild
             >
-              Get in Touch
+              <Link href='/contact'>
+                Get in Touch
+              </Link>
             </Button>
           </NavigationMenuItem>
         </NavigationMenuList>
