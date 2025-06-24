@@ -55,15 +55,6 @@ export default function Navbar() {
             </NavigationMenuLink>
           </NavigationMenuItem>
 
-          {/* About */}
-          <NavigationMenuItem>
-            <NavigationMenuLink
-              href='/about'
-              className='px-4 py-2'
-            >
-              About
-            </NavigationMenuLink>
-          </NavigationMenuItem>
 
           {/* Services */}
           <NavigationMenuItem>
@@ -85,6 +76,16 @@ export default function Navbar() {
             </NavigationMenuLink>
           </NavigationMenuItem>
 
+          {/* Case Studies */}
+          <NavigationMenuItem>
+            <NavigationMenuLink
+              href='/case-study'
+              className='px-4 py-2'
+            >
+              Case Studies
+            </NavigationMenuLink>
+          </NavigationMenuItem>
+          
           {/* My Projects */}
           <NavigationMenuItem>
             <NavigationMenuTrigger className='bg-transparent text-white'>
