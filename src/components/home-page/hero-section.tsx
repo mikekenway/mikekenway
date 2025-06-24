@@ -1,7 +1,6 @@
 import {
   Cog6ToothIcon,
   CommandLineIcon,
-  ComputerDesktopIcon,
   DocumentTextIcon,
   PencilSquareIcon,
 } from '@heroicons/react/24/solid';
