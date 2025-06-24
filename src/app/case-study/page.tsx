@@ -21,9 +21,9 @@ export default function CaseStudiesPage() {
           <h1 className='text-6xl font-bold text-white mb-8'>Case Studies</h1>
           <p className='px-24 mb-12 text-muted-foreground text-sm text-left md:text-base'>
             Each of these case studies represents a focused, collaborative
-            engagement. I work closely with teams to create stable,
-            scalable solutions that improve performance, reduce friction, and
-            support business goals. 
+            engagement. I work closely with teams to create stable, scalable
+            solutions that improve performance, reduce friction, and support
+            business goals.
           </p>
         </div>
 
@@ -127,8 +127,8 @@ export default function CaseStudiesPage() {
                 <div className='space-y-4'>
                   <div className='relative w-full h-64 rounded-lg overflow-hidden'>
                     <Image
-                      src='/images/case-study-placeholder.jpg'
-                      alt='Case study preview'
+                      src='https://dummyimage.com/400x256/374151/ffffff&text=Platform+Redesign'
+                      alt='Platform redesign case study preview'
                       fill
                       className='object-cover'
                     />
@@ -249,8 +249,8 @@ export default function CaseStudiesPage() {
                 <div className='space-y-4'>
                   <div className='relative w-full h-64 rounded-lg overflow-hidden'>
                     <Image
-                      src='/images/case-study-placeholder.jpg'
-                      alt='Case study preview'
+                      src='https://dummyimage.com/400x256/374151/ffffff&text=B2B+Customer+Experience'
+                      alt='B2B customer experience case study preview'
                       fill
                       className='object-cover'
                     />
@@ -371,8 +371,8 @@ export default function CaseStudiesPage() {
                 <div className='space-y-4'>
                   <div className='relative w-full h-64 rounded-lg overflow-hidden'>
                     <Image
-                      src='/images/case-study-placeholder.jpg'
-                      alt='Case study preview'
+                      src='https://dummyimage.com/400x256/374151/ffffff&text=E-Commerce+Platform'
+                      alt='E-commerce platform case study preview'
                       fill
                       className='object-cover'
                     />
