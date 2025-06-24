@@ -21,27 +21,18 @@ import { IoTelescopeSharp } from 'react-icons/io5';
 
 export default function ServicesPage() {
   return (
-    <main className='min-h-screen py-12 px-4 flex flex-col items-center bg-gradient-to-b from-zinc-950 to-zinc-900'>
+    <main className='min-h-screen py-12 px-4 flex flex-col items-center '>
       <h1 className='text-4xl font-bold mb-4 text-white text-center'>
         All Services
       </h1>
-      <p className='text-lg text-muted-foreground mb-8 max-w-2xl text-center'>
-        Explore the full range of services I offer, from UX design to
-        infrastructure management. Each service is tailored to help you succeed
-        at every stage of your business.
+      <p className='text-lg text-muted-foreground p-4 mb-8 max-w-2xl text-left'>
+        From day one, I&apos;ve always said &quot;if I can&apos;t do it,
+        I&apos;ll figure out how&quot; and that&apos;s set me on a path of
+        continuous learning that I use to bring value to my clients each and
+        every day. Here are some of the most common ways I can help you.
       </p>
       <div className='w-full max-w-3xl'>
-        <div className='bg-transparent max-w-3xl mx-auto text-white'>
-          <h2 className='text-3xl font-bold text-center mb-2'>
-            Offered Services
-          </h2>
-          <p className='text-left text-muted-foreground mb-6 py-4'>
-            From day one, I&apos;ve always said &quot;if I can&apos;t do it,
-            I&apos;ll figure out how&quot; and that&apos;s set me on a path of
-            continuous learning that I use to bring value to my clients each and
-            every day. Here are some of the most common ways I can help you.
-          </p>
-
+        <div className='max-w-3xl mx-auto text-white'>
           <Accordion
             type='single'
             defaultValue='analytics'

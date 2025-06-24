@@ -14,16 +14,17 @@ export default function HeroSection() {
         <div className="flex flex-col items-start gap-6 max-w-xl">
           {/* Heading */}
           <h1 className="text-4xl md:text-6xl font-extrabold leading-tight mb-2">
-            What Can I
+            Hi! I&rsquo;m
             <br />
-            Do For You?
+            Kenway
           </h1>
 
           {/* Subheading */}
           <p className="text-lg text-gray-300 mb-4">
-            I love helping people bring their ideas to life. Whether you need
-            thoughtful design, clear strategy, or both, I’m here to help shape
-            projects that connect and make an impact.
+            I&rsquo;m a designer and developer who loves helping people bring
+            their ideas to life. Whether you need thoughtful design, clear
+            strategy, or both, I&rsquo;m here to help shape projects that
+            connect and make an impact.
           </p>
 
           {/* Features */}
