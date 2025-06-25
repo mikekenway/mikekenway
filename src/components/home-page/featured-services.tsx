@@ -16,21 +16,21 @@ import { Button } from '@/components/ui/button';
 
 const FEATURED_SERVICES = [
   {
-    icon: <PencilSquareIcon className='size-6 text-white' />, 
+    icon: <PencilSquareIcon className='size-6 text-white' />,
     title: 'User Experience Design',
     description:
       "Great UX isn't just about how things look — it's about how easily people can use your product.",
     link: '/services#user-experience-design',
   },
   {
-    icon: <Cog6ToothIcon className='size-6 text-white' />, 
+    icon: <Cog6ToothIcon className='size-6 text-white' />,
     title: 'Service Design',
     description:
       'Service Design looks beyond the screen — it maps and improves the full journey across people, systems, and touchpoints.',
     link: '/services#service-design',
   },
   {
-    icon: <CommandLineIcon className='size-6 text-white' />, 
+    icon: <CommandLineIcon className='size-6 text-white' />,
     title: 'Web Development',
     description:
       "I build fast, modern websites tailored to your goals — whether that's selling products, generating leads, or just telling your story clearly.",
@@ -38,9 +38,16 @@ const FEATURED_SERVICES = [
   },
 ];
 
-export function FeaturedServices() {
+interface FeaturedServicesProps {
+  id?: string;
+}
+
+export function FeaturedServices({ id }: FeaturedServicesProps) {
   return (
-    <section className='py-16'>
+    <section
+      id={id}
+      className='py-16'
+    >
       <div className='max-w-4xl mx-auto text-center'>
         <h2 className='text-4xl font-bold mb-8 text-white'>
           What Can I Do For You?
@@ -48,10 +55,10 @@ export function FeaturedServices() {
         <p className='text-muted-foreground mb-12 px-16 text-left'>
           I&rsquo;ve worn a lot of hats: designer, developer, photographer,
           producer, writer, tech support, strategist, builder, fixer. Every
-          challenge I&rsquo;ve encountered has sharpened a different blade in
-          my arsenal, and every project another tool to the belt. If you
-          need something done — and done well — chances are I&rsquo;ve done it,
-          or I&rsquo;ll learn it fast. 
+          challenge I&rsquo;ve encountered has sharpened a different blade in my
+          arsenal, and every project another tool to the belt. If you need
+          something done — and done well — chances are I&rsquo;ve done it, or
+          I&rsquo;ll learn it fast.
         </p>
         <div className='grid grid-cols-1 md:grid-cols-3 gap-6 mb-10'>
           {FEATURED_SERVICES.map((service) => (

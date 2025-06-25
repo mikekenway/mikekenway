@@ -3,9 +3,16 @@
 import { MailIcon } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 
-export default function ContactSection() {
+interface ContactSectionProps {
+  id?: string;
+}
+
+export default function ContactSection({ id }: ContactSectionProps) {
   return (
-    <section className='w-full bg-black px-4 py-24 mb-24 text-center'>
+    <section
+      id={id}
+      className='w-full bg-black px-4 py-24 mb-24 text-center'
+    >
       <div className='max-w-2xl mx-auto space-y-6'>
         <h2 className='text-2xl md:text-3xl font-bold text-white'>
           Ready to start a conversation?

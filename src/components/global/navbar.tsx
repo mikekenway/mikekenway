@@ -1,6 +1,6 @@
 'use client';
 
-import { useState } from 'react';
+import { useState, useEffect, useRef } from 'react';
 import Image from 'next/image';
 import { Button } from '@/components/ui/button';
 import Link from 'next/link';
@@ -19,6 +19,18 @@ import {
 
 export default function Navbar() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const [showBg, setShowBg] = useState(false);
+  const navRef = useRef<HTMLElement>(null);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setShowBg(window.scrollY > 200);
+    };
+
+    window.addEventListener('scroll', handleScroll, { passive: true });
+    handleScroll(); // Run on mount
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
 
   const toggleMobileMenu = () => {
     setIsMobileMenuOpen(!isMobileMenuOpen);
@@ -29,7 +41,12 @@ export default function Navbar() {
   };
 
   return (
-    <nav className='sticky top-0 z-50 flex items-center justify-between text-white px-8 p-4 transition-all duration-300 bg-transparent'>
+    <nav
+      ref={navRef}
+      className={`sticky top-0 z-50 flex items-center justify-between text-white px-8 p-4 transition-all duration-300 ${
+        showBg ? 'bg-black/60 backdrop-blur-sm' : 'bg-transparent'
+      }`}
+    >
       {/* Logo */}
       <Link
         href='/'

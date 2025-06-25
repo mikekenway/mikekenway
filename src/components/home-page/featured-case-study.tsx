@@ -4,9 +4,16 @@ import Image from 'next/image';
 import { Button } from '@/components/ui/button';
 import { ArrowRightIcon } from '@heroicons/react/24/solid';
 
-export default function FeaturedCaseStudy() {
+interface FeaturedCaseStudyProps {
+  id?: string;
+}
+
+export default function FeaturedCaseStudy({ id }: FeaturedCaseStudyProps) {
   return (
-    <section className='w-full bg-black px-4 py-12 md:py-48'>
+    <section
+      id={id}
+      className='w-full bg-black px-4 py-12 md:py-48'
+    >
       <div className='max-w-5xl mx-auto grid md:grid-cols-2 gap-8 items-center'>
         {/* Image */}
         <div className='relative w-full h-80 md:h-[420px] rounded-xl overflow-hidden'>

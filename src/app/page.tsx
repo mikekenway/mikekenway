@@ -6,10 +6,10 @@ import ContactSection from '@/components/home-page/contact-section';
 export default function Home() {
   return (
     <div className='relative z-10'>
-      <HeroSection />
-      <FeaturedServices />
-      <FeaturedCaseStudy />
-      <ContactSection />  
+      <HeroSection id='hero' />
+      <FeaturedServices id='services' />
+      <FeaturedCaseStudy id='case-studies' />
+      <ContactSection id='contact' />
     </div>
   );
 }
