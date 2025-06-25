@@ -1,6 +1,6 @@
 'use client';
 
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 import Image from 'next/image';
 import { Button } from '@/components/ui/button';
 import Link from 'next/link';
@@ -18,18 +18,7 @@ import {
 } from '@/components/ui/navigation-menu';
 
 export default function Navbar() {
-  const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
-
-  useEffect(() => {
-    const handleScroll = () => {
-      const scrollTop = window.scrollY;
-      setIsScrolled(scrollTop > 0);
-    };
-
-    window.addEventListener('scroll', handleScroll);
-    return () => window.removeEventListener('scroll', handleScroll);
-  }, []);
 
   const toggleMobileMenu = () => {
     setIsMobileMenuOpen(!isMobileMenuOpen);
@@ -40,11 +29,7 @@ export default function Navbar() {
   };
 
   return (
-    <nav
-      className={`sticky top-0 z-50 flex items-center justify-between text-white px-8 p-4 transition-all duration-300 ${
-        isScrolled ? 'bg-black/80 backdrop-blur-sm' : 'bg-transparent'
-      }`}
-    >
+    <nav className='sticky top-0 z-50 flex items-center justify-between text-white px-8 p-4 transition-all duration-300 bg-transparent'>
       {/* Logo */}
       <Link
         href='/'
@@ -111,14 +96,14 @@ export default function Navbar() {
               <NavigationMenuContent>
                 <ul className='grid gap-2 p-4 w-56 bg-black backdrop-blur-sm border border-gray-800 text-white rounded-lg'>
                   <li>
-                  <li>
-                    <NavigationMenuLink
-                      href='/projects/apex-foundry'
-                      className='block px-3 py-2'
-                    >
-                      Apex Foundry
-                    </NavigationMenuLink>
-                  </li>
+                    <li>
+                      <NavigationMenuLink
+                        href='/projects/apex-foundry'
+                        className='block px-3 py-2'
+                      >
+                        Apex Foundry
+                      </NavigationMenuLink>
+                    </li>
                     <NavigationMenuLink
                       href='/projects/ghostboy'
                       className='block px-3 py-2'
