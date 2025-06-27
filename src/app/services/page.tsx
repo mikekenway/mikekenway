@@ -47,7 +47,7 @@ export default function ServicesPage() {
                 </div>
               </AccordionTrigger>
               <AccordionContent
-                image='/images/home-page/ux.webp'
+                image='/images/services/ux-design.webp'
                 imageAlt='Analytics dashboard showing charts and data visualization'
               >
                 <p className='text-sm mb-4 text-muted-foreground'>
@@ -85,7 +85,7 @@ export default function ServicesPage() {
                 </div>
               </AccordionTrigger>
               <AccordionContent
-                image='/images/home-page/service-design.webp'
+                image='/images/services/service-design.webp'
                 imageAlt='Service design process illustration'
               >
                 <p className='text-sm mb-4 text-muted-foreground'>
@@ -126,7 +126,7 @@ export default function ServicesPage() {
                 </div>
               </AccordionTrigger>
               <AccordionContent
-                image='/images/home-page/dev.webp'
+                image='/images/services/web-development.webp'
                 imageAlt='Workflow automation and process optimization'
               >
                 <p className='text-sm mb-4 text-muted-foreground'>
@@ -165,7 +165,7 @@ export default function ServicesPage() {
                 </div>
               </AccordionTrigger>
               <AccordionContent
-                image='/images/home-page/shopify.webp'
+                image='/images/services/shopify.webp'
                 imageAlt='Team collaboration and communication'
               >
                 <p className='text-sm mb-4 text-muted-foreground'>
@@ -199,7 +199,7 @@ export default function ServicesPage() {
               <AccordionTrigger>
                 <div className='flex items-center gap-2'>
                   <Image
-                    src='/images/home-page/klaviyo.webp'
+                    src='/images/services/klaviyo-icon.webp'
                     alt='Klaviyo logo'
                     width={24}
                     height={24}
@@ -208,7 +208,7 @@ export default function ServicesPage() {
                 </div>
               </AccordionTrigger>
               <AccordionContent
-                image='/images/home-page/klaviyo.webp'
+                image='/images/services/klaviyo.webp'
                 imageAlt='Team collaboration and communication'
               >
                 <p className='text-sm mb-4 text-muted-foreground'>
@@ -246,20 +246,24 @@ export default function ServicesPage() {
                 </div>
               </AccordionTrigger>
               <AccordionContent
-                image='/images/home-page/ux.webp'
+                image='/images/services/creative-direction.webp'
                 imageAlt='AI and machine learning technology'
               >
                 <p className='text-sm mb-4 text-muted-foreground'>
-                  Leverage AI to handle repetitive tasks, answer questions, and
-                  support your team around the clock.
+                  Creative Direction isn&apos;t just about making things look
+                  good — it&apos;s about crafting a vision that aligns every
+                  visual, word, and moment with your brand&apos;s goals. I guide
+                  the look, feel, and voice of your brand to create a clear
+                  identity, inspire connection, and drive cohesive execution
+                  across all platforms.
                 </p>
                 <ul className='space-y-2 text-sm'>
                   {[
-                    'Natural language task assistance',
-                    'Smart responses based on your data',
-                    '24/7 automated support',
-                    'Helps reduce team workload',
-                    'Continuously learns and improves',
+                    'Unified Brand Identity',
+                    'Clear Visual and Verbal Communication',
+                    'Improved Content Consistency Across Teams',
+                    'Higher Engagement Across Channels',
+                    'Vision-Driven Decision Making',
                   ].map((feature) => (
                     <li
                       key={feature}
@@ -274,7 +278,7 @@ export default function ServicesPage() {
             </AccordionItem>
 
             {/* UI Design */}
-            <AccordionItem value='ai'>
+            <AccordionItem value='ui-design'>
               <AccordionTrigger>
                 <div className='flex items-center gap-2'>
                   <CodeBracketSquareIcon className='size-6' />
@@ -282,58 +286,24 @@ export default function ServicesPage() {
                 </div>
               </AccordionTrigger>
               <AccordionContent
-                image='/images/home-page/ux.webp'
+                image='/images/services/ui-design.webp'
                 imageAlt='AI and machine learning technology'
               >
                 <p className='text-sm mb-4 text-muted-foreground'>
-                  Leverage AI to handle repetitive tasks, answer questions, and
-                  support your team around the clock.
+                  UI Design isn&apos;t just about aesthetics — it&apos;s about
+                  guiding attention, creating rhythm, and making digital spaces
+                  feel intuitive and inviting. I design clean, purposeful
+                  interfaces that support usability, align with your brand, and
+                  enhance every user interaction from the first click to the
+                  final conversion.
                 </p>
                 <ul className='space-y-2 text-sm'>
                   {[
-                    'Natural language task assistance',
-                    'Smart responses based on your data',
-                    '24/7 automated support',
-                    'Helps reduce team workload',
-                    'Continuously learns and improves',
-                  ].map((feature) => (
-                    <li
-                      key={feature}
-                      className='flex items-center gap-2'
-                    >
-                      <CheckCircleIcon className='size-4 text-zinc-400' />
-                      {feature}
-                    </li>
-                  ))}
-                </ul>
-              </AccordionContent>
-            </AccordionItem>
-
-            {/* Graphic Design */}
-            <AccordionItem value='graphic-design'>
-              <AccordionTrigger>
-                <div className='flex items-center gap-2'>
-                  <SwatchIcon className='size-6' />
-                  <span>Graphic Design</span>
-                </div>
-              </AccordionTrigger>
-              <AccordionContent
-                image='/images/home-page/design.webp'
-                imageAlt='Graphic design process illustration'
-              >
-                <p className='text-sm mb-4 text-muted-foreground'>
-                  From brand identities to social graphics, I create visuals
-                  that feel intentional and aligned. Every piece is crafted to
-                  support your message, elevate your brand, and work across the
-                  platforms you care about most.
-                </p>
-                <ul className='space-y-2 text-sm'>
-                  {[
-                    'Branding systems, logos, and visual identities',
-                    'Marketing assets for web, email, and social',
-                    'Print-ready designs for packaging and merch',
-                    'Editable templates for long-term use',
-                    'Creative direction that ties it all together',
+                    'Consistent, Polished Interfaces',
+                    'Improved Usability and Accessibility',
+                    'Higher User Satisfaction',
+                    'More Effective Visual Hierarchy',
+                    'Conversion-Focused Design Choices',
                   ].map((feature) => (
                     <li
                       key={feature}
@@ -356,7 +326,7 @@ export default function ServicesPage() {
                 </div>
               </AccordionTrigger>
               <AccordionContent
-                image='/images/home-page/product-photography.webp'
+                image='/images/services/photo.webp'
                 imageAlt='Product photography process illustration'
               >
                 <p className='text-sm mb-4 text-muted-foreground'>
@@ -386,8 +356,49 @@ export default function ServicesPage() {
               </AccordionContent>
             </AccordionItem>
 
+            {/* Graphic Design */}
+            <AccordionItem value='graphic-design'>
+              <AccordionTrigger>
+                <div className='flex items-center gap-2'>
+                  <SwatchIcon className='size-6' />
+                  <span>Graphic Design</span>
+                </div>
+              </AccordionTrigger>
+              <AccordionContent
+                image='/images/services/graphic-design.webp'
+                imageAlt='Graphic design process illustration'
+              >
+                <p className='text-sm mb-4 text-muted-foreground'>
+                  Graphic Design isn&apos;t just about making things look good
+                  — it&apos;s about crafting a vision that aligns every
+                  visual, word, and moment with your brand&apos;s goals. I guide
+                  the look, feel, and voice of your brand to create a clear
+                  identity, inspire connection, and drive cohesive execution
+                  across all platforms.
+                </p>
+                <ul className='space-y-2 text-sm'>
+                  {[
+                    'Branding systems, logos, and visual identities',
+                    'Marketing assets for web, email, and social',
+                    'Print-ready designs for packaging and merch',
+                    'Editable templates for long-term use',
+                    'Creative direction that ties it all together',
+                  ].map((feature) => (
+                    <li
+                      key={feature}
+                      className='flex items-center gap-2'
+                    >
+                      <CheckCircleIcon className='size-4 text-zinc-400' />
+                      {feature}
+                    </li>
+                  ))}
+                </ul>
+              </AccordionContent>
+            </AccordionItem>
+
+
             {/* IT, Network, and Infrastructure Design & Management */}
-            <AccordionItem value='network'>
+            <AccordionItem value='network-management'>
               <AccordionTrigger>
                 <div className='flex items-center gap-2'>
                   <ServerStackIcon className='size-6' />
@@ -397,7 +408,7 @@ export default function ServicesPage() {
                 </div>
               </AccordionTrigger>
               <AccordionContent
-                image='/images/home-page/network.webp'
+                image='/images/services/network-management.webp'
                 imageAlt='IT, Network, and Infrastructure Design & Management process illustration'
               >
                 <p className='text-sm mb-4 text-muted-foreground'>
