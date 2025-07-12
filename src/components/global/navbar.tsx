@@ -85,16 +85,6 @@ export default function Navbar() {
               </NavigationMenuLink>
             </NavigationMenuItem>
 
-            {/* Blog */}
-            <NavigationMenuItem>
-              <NavigationMenuLink
-                href='/blog'
-                className='px-4 py-2'
-              >
-                Blog
-              </NavigationMenuLink>
-            </NavigationMenuItem>
-
             {/* Case Studies */}
             <NavigationMenuItem>
               <NavigationMenuLink
@@ -111,16 +101,16 @@ export default function Navbar() {
                 My Projects
               </NavigationMenuTrigger>
               <NavigationMenuContent>
-                <ul className='grid gap-2 p-4 w-56 bg-black backdrop-blur-sm border border-gray-800 text-white rounded-lg'>
+                <ul className=' grid gap-2 p-4 w-56 bg-black backdrop-blur-sm border border-gray-800 text-white rounded-lg'>
                   <li>
-                    <li>
-                      <NavigationMenuLink
-                        href='/projects/apex-foundry'
-                        className='block px-3 py-2'
-                      >
-                        Apex Foundry
-                      </NavigationMenuLink>
-                    </li>
+                    <NavigationMenuLink
+                      href='/projects/apex-foundry'
+                      className='block px-3 py-2'
+                    >
+                      Apex Foundry
+                    </NavigationMenuLink>
+                  </li>
+                  <li>
                     <NavigationMenuLink
                       href='/projects/ghostboy'
                       className='block px-3 py-2'
@@ -171,9 +161,9 @@ export default function Navbar() {
         aria-label='Toggle mobile menu'
       >
         {isMobileMenuOpen ? (
-          <XMarkIcon className='h-6 w-6' />
+          <XMarkIcon className='size-6' />
         ) : (
-          <Bars3Icon className='h-6 w-6' />
+          <Bars3Icon className='size-6' />
         )}
       </button>
 
