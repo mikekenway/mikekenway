@@ -23,7 +23,7 @@ export default function HeroSection({ id }: HeroSectionProps) {
           <h1 className='text-4xl md:text-6xl font-extrabold leading-tight mb-2'>
             Hi! I&rsquo;m
             <br />
-            <span className='text-7xl text-indigo-500'>Ekko</span>
+            <span className='text-7xl text-indigo-500'>Kenway</span>
           </h1>
 
           {/* Subheading */}
