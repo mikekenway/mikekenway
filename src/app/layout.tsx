@@ -49,15 +49,15 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: { children: ReactNode }) {
   return (
     <html lang='en'>
-      <body className='bg-black'>
-        {/* Indigo Gradient Splash (Top Left) */}
+      <body className='bg-black w-full h-full'>
+        {/* Indigo Gradient */}
         <div
           className='pointer-events-none absolute -top-32 -left-32 w-[420px] h-[420px] z-0'
           aria-hidden='true'
         >
           <div className='w-full h-full bg-gradient-to-br from-indigo-900 via-indigo-700 to-transparent opacity-40 blur-[90px] rounded-full' />
         </div>
-        {/* Pink Gradient Splash (Bottom Right) */}
+        {/* Pink Gradient */}
         <div
           className='pointer-events-none absolute -bottom-32 -right-32 w-[420px] h-[420px] z-0'
           aria-hidden='true'
@@ -69,7 +69,9 @@ export default function RootLayout({ children }: { children: ReactNode }) {
         <Navbar />
 
         <div className='relative z-10'>
-          <main className={inter.className}>{children}</main>
+          <main className={`${inter.className} flex container mx-auto`}>
+            {children}
+          </main>
           <Footer />
         </div>
       </body>
