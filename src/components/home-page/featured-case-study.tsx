@@ -12,16 +12,16 @@ export default function FeaturedCaseStudy({ id }: FeaturedCaseStudyProps) {
   return (
     <section
       id={id}
-      className='w-full bg-black px-4 py-12 md:py-48'
+      className='w-full bg-black px-4 py-12 md:py-48 rounded-2xl'
     >
       <div className='max-w-5xl mx-auto grid md:grid-cols-2 gap-8 items-center'>
         {/* Image */}
-        <div className='relative w-full h-80 md:h-[420px] rounded-xl overflow-hidden'>
+        <div className='relative w-full h-80 md:h-[420px] rounded-xl border border-white overflow-hidden'>
           <Image
-            src='https://dummyimage.com/600x800/2a2a2a/ffffff&text=Placeholder'
+            src='/images/home/oliver.jpg'
             alt='Featured client'
             fill
-            className='object-cover'
+            className='object-cover p-4 overflow-hidden'
           />
         </div>
 

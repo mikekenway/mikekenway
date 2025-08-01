@@ -49,7 +49,7 @@ export default function HeroSection({ id }: HeroSectionProps) {
       className='relative overflow-hidden'
       id={id}
     >
-      <div className='px-4 w-full md:px-6 2xl:max-w-[1200px] 2xl:mx-auto py-24 md:py-32'>
+      <div className='px-4 w-full md:px-6 2xl:max-w-[1200px] 2xl:mx-auto py-12 m:py-24 md:py-32'>
         {/* Heading Section */}
         <div className='mx-auto max-w-3xl text-center mb-6 md:mb-8'>
           <h1 className='text-4xl font-bold tracking-tight sm:text-5xl md:text-6xl'>
@@ -59,7 +59,7 @@ export default function HeroSection({ id }: HeroSectionProps) {
         </div>
 
         {/* Description Section */}
-        <div className='mx-auto max-w-3xl text-center mb-10 md:mb-16'>
+        <div className='mx-auto max-w-3xl text-center mb-10'>
           <p className='text-xl text-muted-foreground'>
             I&apos;m a designer and developer who loves helping people bring
             their ideas to life. Whether you need thoughtful design, clear
@@ -100,7 +100,7 @@ export default function HeroSection({ id }: HeroSectionProps) {
               <div className='w-full h-full rounded-xl bg-zinc-900 flex items-center justify-center border'>
                 <Image
                   className='w-full h-full object-cover rounded-xl'
-                  src='/images/home-page/hero-photo.png'
+                  src='/images/home/hero-photo.png'
                   alt='photo of mike kenway'
                   fill
                   priority
