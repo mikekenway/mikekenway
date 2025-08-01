@@ -52,7 +52,7 @@ export function FeaturedServices({ id }: FeaturedServicesProps) {
         <h2 className='text-4xl font-bold mb-8 text-white'>
           What Can I Do For You?
         </h2>
-        <p className='text-muted-foreground mb-12 px-16 text-left'>
+        <p className='text-muted-foreground mb-12 px-4 md:px-16 text-left'>
           I&rsquo;ve worn a lot of hats: designer, developer, photographer,
           producer, writer, tech support, strategist, builder, fixer. Every
           challenge I&rsquo;ve encountered has sharpened a different blade in my

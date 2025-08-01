@@ -46,10 +46,10 @@ export default function HeroSection({ id }: HeroSectionProps) {
 
   return (
     <div
-      className='relative overflow-hidden'
+      className='relative overflow-hidden w-full'
       id={id}
     >
-      <div className='px-4 w-full md:px-6 2xl:max-w-[1200px] 2xl:mx-auto py-12 m:py-24 md:py-32'>
+      <div className='px-4 w-full md:px-6 2xl:max-w-[1200px] 2xl:mx-auto py-24 md:py-32'>
         {/* Heading Section */}
         <div className='mx-auto max-w-3xl text-center mb-6 md:mb-8'>
           <h1 className='text-4xl font-bold tracking-tight sm:text-5xl md:text-6xl'>
@@ -216,7 +216,7 @@ export default function HeroSection({ id }: HeroSectionProps) {
                     className='gap-1'
                     asChild
                   >
-                    <Link href='/services#'>
+                    <Link href='/services'>
                       Learn More
                       {/* {features[activeFeature].title.toLowerCase()} */}
                       <ArrowRight className='h-3 w-3' />
