@@ -69,7 +69,7 @@ export default function RootLayout({ children }: { children: ReactNode }) {
         <Navbar />
 
         <div className='relative z-10'>
-          <main className={`${inter.className} flex container mx-auto`}>
+          <main className={`${inter.className} flex sm:container sm:mx-auto`}>
             {children}
           </main>
           <Footer />
