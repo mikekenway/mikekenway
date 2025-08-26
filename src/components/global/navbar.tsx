@@ -96,7 +96,7 @@ export default function Navbar() {
             </NavigationMenuItem>
 
             {/* My Projects */}
-            <NavigationMenuItem>
+            {/* <NavigationMenuItem>
               <NavigationMenuTrigger className='bg-transparent text-white'>
                 My Projects
               </NavigationMenuTrigger>
@@ -136,7 +136,7 @@ export default function Navbar() {
                   </li>
                 </ul>
               </NavigationMenuContent>
-            </NavigationMenuItem>
+            </NavigationMenuItem> */}
 
             {/* Get in Touch */}
             <NavigationMenuItem>
