@@ -165,7 +165,7 @@ export default function ServicesPage() {
                 </div>
               </AccordionTrigger>
               <AccordionContent
-                image='/images/services/shopify.webp'
+                image='/images/services/shopify-partner.webp'
                 imageAlt='Team collaboration and communication'
               >
                 <p className='text-sm mb-4 text-muted-foreground'>
@@ -208,7 +208,7 @@ export default function ServicesPage() {
                 </div>
               </AccordionTrigger>
               <AccordionContent
-                image='/images/services/klaviyo.webp'
+                image='/images/services/klaviyo-partner.webp'
                 imageAlt='Team collaboration and communication'
               >
                 <p className='text-sm mb-4 text-muted-foreground'>
@@ -326,7 +326,7 @@ export default function ServicesPage() {
                 </div>
               </AccordionTrigger>
               <AccordionContent
-                image='/images/services/photo.webp'
+                image='/images/services/product-photography.webp'
                 imageAlt='Product photography process illustration'
               >
                 <p className='text-sm mb-4 text-muted-foreground'>
@@ -369,10 +369,10 @@ export default function ServicesPage() {
                 imageAlt='Graphic design process illustration'
               >
                 <p className='text-sm mb-4 text-muted-foreground'>
-                  Graphic Design isn&apos;t just about making things look good
-                  — it&apos;s about crafting a vision that aligns every
-                  visual, word, and moment with your brand&apos;s goals. I guide
-                  the look, feel, and voice of your brand to create a clear
+                  Graphic Design isn&apos;t just about making things look good —
+                  it&apos;s about crafting a vision that aligns every visual,
+                  word, and moment with your brand&apos;s goals. I guide the
+                  look, feel, and voice of your brand to create a clear
                   identity, inspire connection, and drive cohesive execution
                   across all platforms.
                 </p>
@@ -395,7 +395,6 @@ export default function ServicesPage() {
                 </ul>
               </AccordionContent>
             </AccordionItem>
-
 
             {/* IT, Network, and Infrastructure Design & Management */}
             <AccordionItem value='network-management'>
