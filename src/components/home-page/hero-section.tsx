@@ -85,9 +85,12 @@ export default function HeroSection({ id }: HeroSectionProps) {
               className='bg-zinc-950'
               asChild
             >
-              <Link href='/contact'>
+              <a
+                href='/resume.pdf'
+                download='Mike_Kenway_Resume.pdf'
+              >
                 View Resume <NotebookTextIcon className='ml-2 size-4' />
-              </Link>
+              </a>
             </Button>
           </div>
         </div>
