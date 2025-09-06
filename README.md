@@ -1,36 +1,37 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 👋 Hey, I'm Ekko
 
-## Getting Started
+UX Developer / Designer 
 
-First, run the development server:
+---
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## 💻 What I Do
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+I'm a full-stack creative working at the intersection of **design, code, and storytelling**. My background spans a decade of hands-on experience in:
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+- 🎨 **UX/UI Design** — thoughtful, user-centered interfaces that aren’t just pretty, but purposeful.
+- 🧑‍💻 **Front-End Development** — currently working with **Next.js**, **React**, **TypeScript**, **Tailwind**, **shadcn*, Tanstack Router/Query, **Convex*, Drizzle, && whatever else has my fancy that day (as i'm typing this, it's electron. I just made a TSRouter/Electron starter - [check it out!](https://github.com/mikekenway/electron-tanstack-starter)).
+- 🛠️ **Infra & IT** — the boring stuff. windows/linux admin, networking, and running my own little homelab. 
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+---
 
-## Learn More
+## 🛠️ What I'm Building
 
-To learn more about Next.js, take a look at the following resources:
+### [ApexFoundry.gg](https://apexfoundry.gg)
+Next.js, Convex - A Playground for Apex Legends Players.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### [ek(klip)se](https://github.com/mikekenway/ekklipse)
+Next.js, Convex - A simple pastebin for dropping between friends/devices.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+### [create-ekko-app](https://github.com/mikekenway/create-ekko-app)
+A silly side project i maintain to make it easy to spin up apps with my favorite web stack. 
 
-## Deploy on Vercel
+### [ekkodex](https://github.com/mikekenway/ekkodex)
+My newest side project. I'm learning about API's, and trying to build a beautiful, simple pokedex in the process. Come along for the ride!
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+### EkkoOS
+Next.js, Clerk, Convex, Docker - My personal productivity system app - alongside a docker network with 40+ containers. 
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+---
+
+Thanks for stopping by — if you're building cool stuff or want to collaborate, [drop me a message](https://mikekenway.com/contact).
+
