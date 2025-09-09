@@ -9,7 +9,7 @@ UX Developer / Designer
 I'm a full-stack creative working at the intersection of **design, code, and storytelling**. My background spans a decade of hands-on experience in:
 
 - 🎨 **UX/UI Design** — thoughtful, user-centered interfaces that aren’t just pretty, but purposeful.
-- 🧑‍💻 **Front-End Development** — currently working with **Next.js**, **React**, **TypeScript**, **Tailwind**, **shadcn*, Tanstack Router/Query, **Convex*, Drizzle, && whatever else has my fancy that day (as i'm typing this, it's electron. I just made a TSRouter/Electron starter - [check it out!](https://github.com/mikekenway/electron-tanstack-starter)).
+- 🧑‍💻 **Front-End Development** — currently working with **Next.js**, **React**, **TypeScript**, **Tailwind**, **shadcn**, Tanstack Router/Query, **Convex**, Drizzle, && whatever else has my fancy that day (as i'm typing this, it's electron. I just made a TSRouter/Electron starter - [check it out!](https://github.com/mikekenway/electron-tanstack-starter)).
 - 🛠️ **Infra & IT** — the boring stuff. windows/linux admin, networking, and running my own little homelab. 
 
 ---
