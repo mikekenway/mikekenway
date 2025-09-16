@@ -19,8 +19,10 @@ export default function CaseStudiesPage() {
       <div className='max-w-4xl mx-auto space-y-8'>
         {/* Header Block */}
         <div className='text-center space-y-2'>
-          <h1 className='text-6xl font-bold text-white mb-8'>Case Studies</h1>
-          <p className='px-24 mb-12 text-muted-foreground text-sm text-left md:text-base'>
+          <h1 className='text-4xl sm:text-6xl font-bold text-white mb-8'>
+            Case Studies
+          </h1>
+          <p className='sm:px-24 sm:mb-12 text-muted-foreground text-sm text-left md:text-base'>
             Each of these case studies represents a focused, collaborative
             engagement. I work closely with teams to create stable, scalable
             solutions that improve performance, reduce friction, and support
