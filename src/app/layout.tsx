@@ -2,8 +2,8 @@ import type { Metadata } from 'next';
 import { ReactNode } from 'react';
 import './globals.css';
 
-import Navbar from '../components/global/navbar';
-import Footer from '../components/global/footer';
+import Navbar from '../components/nav/navbar';
+import Footer from '../components/nav/footer';
 
 import { Inter } from 'next/font/google';
 

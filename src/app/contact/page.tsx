@@ -18,8 +18,8 @@ export default function ContactPage() {
         <div className='max-w-2xl mx-auto text-center mb-12 space-y-2'>
           <h1 className='text-5xl font-bold mb-6'>Get in Touch</h1>
           <p className='text-muted-foreground px-12 text-left'>
-            I&apos;m always happy to discuss new projects, creative ideas, or
-            opportunities to be part of your vision. Looking forward to
+            I&apos;m always happy to discuss new projects, creative ideas,
+            or opportunities to be part of your vision. Looking forward to
             chatting!
           </p>
         </div>
@@ -129,7 +129,7 @@ export default function ContactPage() {
               </Label>
               <Textarea
                 id='details'
-                placeholder='Tell us about your project'
+                placeholder='Tell me about your project'
                 rows={5}
                 className='bg-black min-h-32'
                 required
@@ -145,7 +145,7 @@ export default function ContactPage() {
             </Button>
 
             <p className='text-center text-sm text-muted-foreground'>
-              I&apos;ll get back to you in 1 - 2 business days.
+              I get back to most inquiries within 1 - 2 business days.
             </p>
           </form>
         </div>

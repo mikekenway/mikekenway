@@ -5,6 +5,7 @@ import Image from 'next/image';
 import { Button } from '@/components/ui/button';
 import Link from 'next/link';
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline';
+import { FaGithub } from 'react-icons/fa';
 
 import {
   NavigationMenu,
@@ -65,16 +66,6 @@ export default function Navbar() {
       <div className='hidden lg:block'>
         <NavigationMenu className='flex font-semibold items-center p-4'>
           <NavigationMenuList className='flex items-center gap-2'>
-            {/* Home */}
-            <NavigationMenuItem>
-              <NavigationMenuLink
-                href='/'
-                className='px-4 py-2'
-              >
-                Home
-              </NavigationMenuLink>
-            </NavigationMenuItem>
-
             {/* Services */}
             <NavigationMenuItem>
               <NavigationMenuLink
@@ -94,6 +85,13 @@ export default function Navbar() {
                 Case Studies
               </NavigationMenuLink>
             </NavigationMenuItem>
+
+            <Link
+              href='https://github.com/mikekenway'
+              className='px-4 py-2 mr-2 border-transparent transition-all duration-200 hover:border-white border-1 rounded-md'
+            >
+              <FaGithub className='size-4' />
+            </Link>
 
             {/* My Projects */}
             {/* <NavigationMenuItem>
