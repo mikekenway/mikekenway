@@ -9,12 +9,10 @@ import { FaGithub } from 'react-icons/fa';
 
 import {
   NavigationMenu,
-  // NavigationMenuContent,
   NavigationMenuIndicator,
   NavigationMenuItem,
   NavigationMenuLink,
   NavigationMenuList,
-  // NavigationMenuTrigger,
   NavigationMenuViewport,
 } from '@/components/ui/navigation-menu';
 
@@ -23,6 +21,7 @@ export default function Navbar() {
   const [showBg, setShowBg] = useState(false);
   const navRef = useRef<HTMLElement>(null);
 
+  // Show background on scroll
   useEffect(() => {
     const handleScroll = () => {
       setShowBg(window.scrollY > 200);
@@ -33,6 +32,7 @@ export default function Navbar() {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
+  // Toggle mobile menu
   const toggleMobileMenu = () => {
     setIsMobileMenuOpen(!isMobileMenuOpen);
   };
@@ -89,52 +89,10 @@ export default function Navbar() {
             <Link
               href='https://github.com/mikekenway'
               className='px-4 py-2 mr-2 border-transparent transition-all duration-200 hover:border-white border-1 rounded-md'
+              target='_blank'
             >
               <FaGithub className='size-4' />
             </Link>
-
-            {/* My Projects */}
-            {/* <NavigationMenuItem>
-              <NavigationMenuTrigger className='bg-transparent text-white'>
-                My Projects
-              </NavigationMenuTrigger>
-              <NavigationMenuContent>
-                <ul className=' grid gap-2 p-4 w-56 bg-black backdrop-blur-sm border border-gray-800 text-white rounded-lg'>
-                  <li>
-                    <NavigationMenuLink
-                      href='/projects/apex-foundry'
-                      className='block px-3 py-2'
-                    >
-                      Apex Foundry
-                    </NavigationMenuLink>
-                  </li>
-                  <li>
-                    <NavigationMenuLink
-                      href='/projects/ghostboy'
-                      className='block px-3 py-2'
-                    >
-                      Ghostboy Co.
-                    </NavigationMenuLink>
-                  </li>
-                  <li>
-                    <NavigationMenuLink
-                      href='/projects/ghostlife'
-                      className='block px-3 py-2'
-                    >
-                      Ghostlife
-                    </NavigationMenuLink>
-                  </li>
-                  <li>
-                    <NavigationMenuLink
-                      href='/projects/third-rule'
-                      className='block px-3 py-2'
-                    >
-                      Third Rule Creative
-                    </NavigationMenuLink>
-                  </li>
-                </ul>
-              </NavigationMenuContent>
-            </NavigationMenuItem> */}
 
             {/* Get in Touch */}
             <NavigationMenuItem>
@@ -197,41 +155,6 @@ export default function Navbar() {
             >
               Case Studies
             </Link>
-
-            {/* Mobile Projects Dropdown */}
-            <div className='px-4 py-2'>
-              <div className='font-semibold mb-2'>My Projects</div>
-              <div className='ml-4 space-y-2'>
-                <Link
-                  href='/projects/ghostlife'
-                  className='block py-1'
-                  onClick={closeMobileMenu}
-                >
-                  Ghostlife
-                </Link>
-                <Link
-                  href='/projects/ghostboy'
-                  className='block py-1'
-                  onClick={closeMobileMenu}
-                >
-                  Ghostboy Co.
-                </Link>
-                <Link
-                  href='/projects/apex-foundry'
-                  className='block py-1'
-                  onClick={closeMobileMenu}
-                >
-                  Apex Foundry
-                </Link>
-                <Link
-                  href='/projects/third-rule'
-                  className='block py-1'
-                  onClick={closeMobileMenu}
-                >
-                  Third Rule Creative
-                </Link>
-              </div>
-            </div>
 
             <Link
               href='/contact'

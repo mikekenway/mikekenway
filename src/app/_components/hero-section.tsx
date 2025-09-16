@@ -213,7 +213,6 @@ export default function HeroSection() {
                 >
                   <Link href='/services'>
                     Learn More
-                    {/* {features[activeFeature].title.toLowerCase()} */}
                     <ArrowRight className='h-3 w-3' />
                   </Link>
                 </Button>
