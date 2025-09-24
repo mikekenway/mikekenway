@@ -8,7 +8,7 @@ I'm a full-stack creative working at the intersection of design, code, and story
 ```
 Thoughtful, user-centered interfaces that aren’t just pretty, but purposeful.
 ```
-🧑‍💻 Front-End Development
+🧑‍💻 (Mostly) Front-End Development
 Currently working with:
 ```
 - Next.js / React
@@ -16,8 +16,10 @@ Currently working with:
 - Tailwind CSS
 - Tanstack Router
 - Tanstack Query
+- GraphQL
 - Convex
 - Drizzle
+- Python
 ```
 && whatever else has my fancy that day (as i'm typing this, it's Electron.
 I just made a [TSRouter/Electron starter](https://github.com/mikekenway/electron-tanstack-starter) - check it out!)
